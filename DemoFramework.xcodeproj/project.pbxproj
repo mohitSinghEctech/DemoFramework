@@ -8,11 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		E4DBD63427C4D3E800C184A9 /* DemoFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = E4DBD63327C4D3E800C184A9 /* DemoFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4DBD64327C4E77100C184A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DBD64027C4E77100C184A9 /* ViewController.swift */; };
+		E4DBD64427C4E77100C184A9 /* NumberCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DBD64127C4E77100C184A9 /* NumberCollectionViewCell.swift */; };
+		E4DBD64527C4E77100C184A9 /* NumbersCollectionViewDelegateAndDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DBD64227C4E77100C184A9 /* NumbersCollectionViewDelegateAndDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E4DBD63027C4D3E800C184A9 /* DemoFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DemoFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4DBD63327C4D3E800C184A9 /* DemoFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoFramework.h; sourceTree = "<group>"; };
+		E4DBD64027C4E77100C184A9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../../../Downloads/ViewsProgrammatically-master/ViewsProgrammatically/ViewController.swift"; sourceTree = "<group>"; };
+		E4DBD64127C4E77100C184A9 /* NumberCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumberCollectionViewCell.swift; path = "../../../../Downloads/ViewsProgrammatically-master/ViewsProgrammatically/NumberCollectionViewCell.swift"; sourceTree = "<group>"; };
+		E4DBD64227C4E77100C184A9 /* NumbersCollectionViewDelegateAndDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumbersCollectionViewDelegateAndDataSource.swift; path = "../../../../Downloads/ViewsProgrammatically-master/ViewsProgrammatically/NumbersCollectionViewDelegateAndDataSource.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +52,9 @@
 			isa = PBXGroup;
 			children = (
 				E4DBD63327C4D3E800C184A9 /* DemoFramework.h */,
+				E4DBD64127C4E77100C184A9 /* NumberCollectionViewCell.swift */,
+				E4DBD64227C4E77100C184A9 /* NumbersCollectionViewDelegateAndDataSource.swift */,
+				E4DBD64027C4E77100C184A9 /* ViewController.swift */,
 			);
 			path = DemoFramework;
 			sourceTree = "<group>";
@@ -93,6 +102,7 @@
 				TargetAttributes = {
 					E4DBD62F27C4D3E800C184A9 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -129,6 +139,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4DBD64327C4E77100C184A9 /* ViewController.swift in Sources */,
+				E4DBD64427C4E77100C184A9 /* NumberCollectionViewCell.swift in Sources */,
+				E4DBD64527C4E77100C184A9 /* NumbersCollectionViewDelegateAndDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +273,7 @@
 		E4DBD63827C4D3E800C184A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -280,6 +294,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -288,6 +303,7 @@
 		E4DBD63927C4D3E800C184A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
